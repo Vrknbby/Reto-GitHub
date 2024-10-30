@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Table
 @Entity(name="Alumnos")
-public class alumnos {
+public class Alumnos {
 
     Long idAlumno;
     String nombre;
@@ -46,19 +46,19 @@ public class alumnos {
         this.fechaNac = fechaNac;
     }
 
-    public alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac) {
+    public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac) {
         this.idAlumno = idAlumno;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
     }
 
-    public alumnos(String nombre, String apellidos, Date fechaNac) {
+    public Alumnos(String nombre, String apellidos, Date fechaNac) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
     }
 
-    public alumnos() {
+    public Alumnos() {
     }
 }
