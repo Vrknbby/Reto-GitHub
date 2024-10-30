@@ -1,18 +1,28 @@
 package pe.idat.RetoGit.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
-@Table
-@Entity(name="Alumnos")
+@Entity
+@Table(name="alumnos")
 public class Alumnos {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idAlumno;
+
+    @Column(name = "nombre")
     String nombre;
+
+    @Column(name = "apellidos")
     String apellidos;
+
+    @Column(name = "fecha_nacimiento")
     Date fechaNac;
+
+    @Column(name = "colegio")
+    String colegio;
 
     public Long getIdAlumno() {
         return idAlumno;
@@ -46,17 +56,27 @@ public class Alumnos {
         this.fechaNac = fechaNac;
     }
 
-    public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac) {
+    public String getColegio() {
+        return colegio;
+    }
+
+    public void setColegio(String colegio) {
+        this.colegio = colegio;
+    }
+
+    public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac, String colegio) {
         this.idAlumno = idAlumno;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
+        this.colegio = colegio;
     }
 
-    public Alumnos(String nombre, String apellidos, Date fechaNac) {
+    public Alumnos(String nombre, String apellidos, Date fechaNac, String colegio) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
+        this.colegio = colegio;
     }
 
     public Alumnos() {
