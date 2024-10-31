@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name="alumnos")
 public class Alumnos {
 
-    //hola a todos
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idAlumno;
@@ -24,6 +24,17 @@ public class Alumnos {
 
     @Column(name = "colegio")
     String colegio;
+
+    @Column(name="dni")
+    String dni;
+
+    public String getDNI() {
+        return dni;
+    }
+
+    public void setDNI(String DNI) {
+        this.dni = DNI;
+    }
 
     public Long getIdAlumno() {
         return idAlumno;
@@ -65,19 +76,21 @@ public class Alumnos {
         this.colegio = colegio;
     }
 
-    public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac, String colegio) {
+    public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac, String colegio, String dni) {
         this.idAlumno = idAlumno;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
         this.colegio = colegio;
+        this.dni = dni;
     }
 
-    public Alumnos(String nombre, String apellidos, Date fechaNac, String colegio) {
+    public Alumnos(String nombre, String apellidos, Date fechaNac, String colegio, String dni) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.fechaNac = fechaNac;
         this.colegio = colegio;
+        this.dni = dni;
     }
 
     public Alumnos() {
