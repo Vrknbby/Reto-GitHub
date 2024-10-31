@@ -8,6 +8,7 @@ import java.util.Date;
 @Table(name="alumnos")
 public class Alumnos {
 
+    //hola a todos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idAlumno;
