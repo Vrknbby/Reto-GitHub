@@ -31,6 +31,10 @@ public class AlumnosService {
         return (ArrayList<Alumnos>) alumnosRepository.findAll();
     }
 
+    public Alumnos obtenerPorId(Long id){
+        return  alumnosRepository.findById(id).orElse(null);
+    }
+
     public boolean eliminarAlumno(Long id){
         if (alumnosRepository.existsById(id)) {
             alumnosRepository.deleteById(id);

@@ -21,6 +21,11 @@ public class AlumnosController {
         return alumnosService.listarAlumnos();
     }
 
+    @GetMapping("find/{alumnoId}")
+    public Alumnos obtenerAlumnoPorId(@PathVariable Long alumnoId){
+        return alumnosService.obtenerPorId(alumnoId);
+    }
+
     @PostMapping()
     public Alumnos guardarAlumno(@RequestBody Alumnos alumno){
         return this.alumnosService.guardarAlumno(alumno);
