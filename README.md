@@ -35,3 +35,14 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
    ```bash
    git clone https://github.com/tu_usuario/RetoGit.git
    cd RetoGit
+
+## Aplocation Properties
+- Debe crear la base de datos en MySQL con el nombre **reto-github**
+
+- spring.application.name=RetoGit
+- spring.datasource.url=jdbc:mysql://localhost:3306/reto-github
+- spring.datasource.username=root (Remplaze por su username)
+- spring.datasource.password=123456 (Remplaze por su contraseña)
+- spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+- spring.jpa.hibernate.ddl-auto=update
+- spring.jpa.show-sql:true
