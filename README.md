@@ -1,5 +1,13 @@
 # RetoGit
 
+## Integrantes
+
+- Barrantes Caceres, Nicolas
+- Huaman Salvatierra, Andy
+- Huamani Cambillo, Andre
+- Medina Galan, Cristian
+- Tocto Rado, Rodrigo
+
 ## Descripción
 
 **RetoGit** es un proyecto de aplicación web desarrollado con Spring Boot, que proporciona una API REST para gestionar información sobre alumnos. El objetivo principal es facilitar el aprendizaje y la práctica de desarrollo de aplicaciones con Java y Spring, integrando una base de datos MySQL para el almacenamiento persistente de datos.
