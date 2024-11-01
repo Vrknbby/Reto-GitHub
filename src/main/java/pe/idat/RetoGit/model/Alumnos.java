@@ -28,14 +28,6 @@ public class Alumnos {
     @Column(name="dni")
     String dni;
 
-    public String getDNI() {
-        return dni;
-    }
-
-    public void setDNI(String DNI) {
-        this.dni = DNI;
-    }
-
     public Long getIdAlumno() {
         return idAlumno;
     }
@@ -74,6 +66,14 @@ public class Alumnos {
 
     public void setColegio(String colegio) {
         this.colegio = colegio;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     public Alumnos(Long idAlumno, String nombre, String apellidos, Date fechaNac, String colegio, String dni) {

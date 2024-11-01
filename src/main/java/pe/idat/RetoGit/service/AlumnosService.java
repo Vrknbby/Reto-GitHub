@@ -23,7 +23,7 @@ public class AlumnosService {
                 Newalumno.getApellidos(),
                 Newalumno.getFechaNac(),
                 Newalumno.getColegio(),
-                Newalumno.getDNI()
+                Newalumno.getDni()
         );
         return  alumnosRepository.save(alumno);
     }
@@ -63,8 +63,8 @@ public class AlumnosService {
             if (alumnoActualizado.getColegio() != null){
                 alumno.setColegio(alumnoActualizado.getColegio());
             }
-            if (alumnoActualizado.getDNI() != null){
-                alumno.setColegio(alumnoActualizado.getDNI());
+            if (alumnoActualizado.getDni() != null){
+                alumno.setDni(alumnoActualizado.getDni());
             }
 
             return alumnosRepository.save(alumno);
