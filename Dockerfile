@@ -6,11 +6,7 @@ FROM maven:3.8-openjdk-17 AS build
 WORKDIR /app
 
 # Copia el archivo pom.xml y descarga las dependencias
-COPY pom.xml .
-RUN mvn dependency:go-offline
-
-# Copia el resto del código fuente
-COPY src ./src
+COPY . /app
 
 # Construye el proyecto
 RUN mvn clean package -DskipTests
