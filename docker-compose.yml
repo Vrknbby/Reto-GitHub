@@ -1,0 +1,21 @@
+
+services:
+  my-mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: reto-github
+    ports:
+      - "3307:3306"
+
+  reto-github:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_HOST: my-mysql
+      DB_PORT: 3306
+      DB_USERNAME: root
+      DB_PASSWORD: 123456
+    depends_on:
+      - my-mysql
