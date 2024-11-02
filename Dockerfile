@@ -5,7 +5,7 @@ FROM maven:3.8-openjdk-17 AS build
 # Establece el directorio de trabajo
 WORKDIR /app
 
-# Copia el archivo pom.xml y descarga las dependencias
+# Copia todo el archivo
 COPY . /app
 
 # Construye el proyecto

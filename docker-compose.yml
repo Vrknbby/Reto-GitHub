@@ -7,6 +7,8 @@ services:
       MYSQL_DATABASE: reto-github
     ports:
       - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
 
   reto-github:
     build: .
@@ -19,3 +21,6 @@ services:
       DB_PASSWORD: 123456
     depends_on:
       - my-mysql
+
+volumes:
+  mysql_data:
