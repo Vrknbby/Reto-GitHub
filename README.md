@@ -2,11 +2,10 @@
 
 ## Integrantes
 
-- Barrantes Caceres, Nicolas
-- Huaman Salvatierra, Andy
-- Huamani Cambillo, Andre
-- Medina Galan, Cristian
-- Tocto Rado, Rodrigo
+- Barrantes Caceres, Nicolas (Vrknbby)
+- Huamani Cambillo, Andre (AndreHC06)
+- Medina Galan, Cristian (Zeta-zeta)
+- Tocto Rado, Rodrigo (Rodrigo-555)
 
 ## Descripción
 
