@@ -49,5 +49,6 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
 
 ## Generar Docker
 
+- Comando en la terminal.
    ```bash
    docker-compose up --build
